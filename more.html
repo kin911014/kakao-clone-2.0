@@ -26,52 +26,128 @@
         <span class="status-bar" __battery-level>100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
-      <header class="header">
-        <div class="header__header-column">
-          <h1 class="header__title">More</h1>
-        </div>
-        <div class="header__header-column">
-          <span class="header__icon">
-            <i class="fas fa-search"></i>
-          </span>
-          <span class="header__icon">
-            <i class="fas fa-comment-medical"></i>
-          </span>
-          <span class="header__icon">
-            <i class="fas fa-cog"></i>
-            <!-- 파일이름 예를들어 fa-cog옆에 스페이스바 + fa-5x
-            로 치면 크기가 바뀐다. -->
-          </span>
-        </div>
-      </header>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="friends.html" class="nav__list-link">
-              <i class="far fa-user"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="index.html" class="nav__list-link">
-              <i class="far fa-comment"></i>
-              <!-- fas는 fontawesomesolid, far은 fontawesomeregular의 약자 -->
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="find.html" class="nav__list-link">
-              <i class="fas fa-search"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="more.html" class="nav__list-link">
-              <i class="fas fa-ellipsis-h"></i>
-            </a>
-          </li>
-          <!-- li.nav__list-item*4>a.nav__list-link로 위 코드 빌드
-          >a는 4개의 li안에 링크가 포함되어 있다는 의미. -->
-        </ul>
-      </nav>
-      <!-- css파일 불러올 때에는 항상 이름이 같아야한다! -->
     </div>
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">More</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-qrcode"></i>
+        </span>
+        <span class="header__icon">
+          <a href="settings.html">
+            <i class="fas fa-cog"></i>
+          </a>
+          <!-- 파일이름 예를들어 fa-cog옆에 스페이스바 + fa-5x
+            로 치면 크기가 바뀐다. -->
+        </span>
+      </div>
+    </header>
+    <main class="more">
+      <header class="more__header">
+        <div class="friends__friend friend friend">
+          <div class="friend__column">
+            <img
+              src="images/카카오3.jpg"
+              alt=""
+              class="g-avatar friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                김동은
+              </span>
+              <span class="friend__status">
+                kin911014@daum.net
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <i class="far fa-comment-alt fa-2x"></i>
+          </div>
+        </div>
+        <ul class="more__btn-list">
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="far fa-smile fa-2x"></i>
+            </span>
+            <span class="more_btn-title">
+              Emoticons
+            </span>
+          </li>
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="fas fa-brush fa-2x"></i>
+            </span>
+            <span class="more_btn-title">
+              Theme
+            </span>
+          </li>
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="fab fa-kickstarter-k fa-2x"> </i>
+            </span>
+            <span class="more_btn-title">
+              Account
+            </span>
+          </li>
+        </ul>
+      </header>
+      <section class="more__suggestions">
+        <h5 class="more__title">Suggestions</h5>
+        <ul class="more__suggestions-list">
+          <li class="more suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-quote-right fa-2x"></i>
+            </span>
+            <span class="suggestion__title">Kakao Story</span>
+          </li>
+          <li class="more suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-beer fa-2x"></i>
+            </span>
+            <span class="suggestion__title">Kakao Friend</span>
+          </li>
+          <li class="more suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-gamepad fa-2x"></i>
+            </span>
+            <span class="suggestion__title">Friends Gem</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="far fa-comment"></i>
+            <!-- fas는 fontawesomesolid, far은 fontawesomeregular의 약자 -->
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+        <!-- li.nav__list-item*4>a.nav__list-link로 위 코드 빌드
+          >a는 4개의 li안에 링크가 포함되어 있다는 의미. -->
+      </ul>
+    </nav>
+    <!-- css파일 불러올 때에는 항상 이름이 같아야한다! -->
   </body>
 </html>

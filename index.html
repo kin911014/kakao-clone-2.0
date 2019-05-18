@@ -23,55 +23,81 @@
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
-        <span class="status-bar" __battery-level>100%</span>
+        <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
-      <header class="header">
-        <div class="header__header-column">
-          <h1 class="header__title">Chats</h1>
-        </div>
-        <div class="header__header-column">
-          <span class="header__icon">
-            <i class="fas fa-search"></i>
-          </span>
-          <span class="header__icon">
-            <i class="fas fa-comment-medical"></i>
-          </span>
-          <span class="header__icon">
-            <i class="fas fa-cog"></i>
-            <!-- 파일이름 예를들어 fa-cog옆에 스페이스바 + fa-5x
-            로 치면 크기가 바뀐다. -->
-          </span>
-        </div>
-      </header>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="friends.html" class="nav__list-link">
-              <i class="far fa-user"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="index.html" class="nav__list-link">
-              <i class="fas fa-comment"></i>
-              <!-- fas는 fontawesomesolid, far은 fontawesomeregular의 약자 -->
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="find.html" class="nav__list-link">
-              <i class="fas fa-search"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="more.html" class="nav__list-link">
-              <i class="fas fa-ellipsis-h"></i>
-            </a>
-          </li>
-          <!-- li.nav__list-item*4>a.nav__list-link로 위 코드 빌드
-          >a는 4개의 li안에 링크가 포함되어 있다는 의미. -->
-        </ul>
-      </nav>
-      <!-- css파일 불러올 때에는 항상 이름이 같아야한다! -->
     </div>
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">채팅</h1>
+      </div>
+      <!-- 아래 아이콘은 위의 와이파이아이콘들과 다르게
+        클릭을 해야하는 것이기에 span에 클래스를 주고있다. -->
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-comment-medical"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+          <!-- 파일이름 예를들어 fa-cog옆에 스페이스바 + fa-5x
+            로 치면 크기가 바뀐다. -->
+        </span>
+      </div>
+    </header>
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chat__chat chat">
+          <a href="chat.html">
+            <div class="chat__coulmn">
+              <img
+                src="images/카카오3.jpg"
+                alt=""
+                class="chat__avatar g-avatar"
+              />
+              <span class="chat__username">
+                카카오페이
+              </span>
+              <span class="chat__preview">
+                송금이 완료되었습니다.
+              </span>
+            </div>
+            <div class="chat__coulmn">
+              <span class="chat__timestamp">어제</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="fas fa-comment"></i>
+            <!-- fas는 fontawesomesolid, far은 fontawesomeregular의 약자 -->
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+        <!-- li.nav__list-item*4>a.nav__list-link로 위 코드 빌드
+          >a는 4개의 li안에 링크가 포함되어 있다는 의미. -->
+      </ul>
+    </nav>
+    <!-- css파일 불러올 때에는 항상 이름이 같아야한다! -->
   </body>
 </html>

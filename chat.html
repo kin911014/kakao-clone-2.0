@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- 아래css파일이 import되었을 때에만 작동 -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <title>Chat | Kakao Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:54</span>
+      </div>
+
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar" __battery-level>100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header__header-column">
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left fa-2x"> </i>
+        </a>
+        <h1 class="header__title">Best Friend</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <div class="header__icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <mains class="chat">
+      <ul class="chat__messages">
+        <span class="chat__timestamp">Friday, January 11, 2019</span>
+        <li class="incoming-message message">
+          <img src="images/카카오3.jpg" class="g-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__author">Best Friend</span>
+            <div class="message__bubble">
+              Congrats i love you!
+            </div>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="incoming-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <div class="message__bubble">
+              Thank you see you soon!
+            </div>
+          </div>
+        </li>
+      </ul>
+    </mains>
+    <div class="chat__write">
+      <div class="chat__write-column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__write-column">
+        <input
+          type="text"
+          placeholder="Send massage"
+          class="chat__write-input"
+        />
+        <!-- placeholder는 텍스트 내부에 디폴트값 글자를 넣어 설명 -->
+      </div>
+      <div class="chat__write-column">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"></i>
+        </span>
+        <span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- 총 3개의 차이점을 정리해 보았다.
+​
+1. 여러 개 나열하였을 때
+ div와 span을 3개씩 만들어 나란히 나열하였을 때, div는 자동 줄 바꿈이 일어나면서 세로로, span은 줄바꿈이 일어나지 않고 가로로 나열된다.
+​
+2. 문단일 때
+동일한 문장을 감쌌을 때, div는 박스 형태로 영역이 설정되고 그 안에 정렬됩니다. 하지만 span 은 줄 단위로 영역이 설정되기 때문에 박스 형태가 아닌 텍스트가 노출되는 영역만 포함이 된다.
+​
+3. 여백 설정
+div의 margin은 4방향 모두 적용이 되며, span의 margin은 양옆으로만 적용이 된다.
+[출처] [HTML5] div, span 차이점|작성자 신수수 -->

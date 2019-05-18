@@ -26,52 +26,117 @@
         <span class="status-bar" __battery-level>100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
-      <header class="header">
-        <div class="header__header-column">
-          <h1 class="header__title">Friends</h1>
-        </div>
-        <div class="header__header-column">
-          <span class="header__icon">
-            <i class="fas fa-search"></i>
-          </span>
-          <span class="header__icon">
-            <i class="fas fa-comment-medical"></i>
-          </span>
-          <span class="header__icon">
-            <i class="fas fa-cog"></i>
-            <!-- 파일이름 예를들어 fa-cog옆에 스페이스바 + fa-5x
+    </div>
+
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">Friends</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+          <!-- 파일이름 예를들어 fa-cog옆에 스페이스바 + fa-5x
             로 치면 크기가 바뀐다. -->
-          </span>
+        </span>
+      </div>
+    </header>
+
+    <main class="friends">
+      <header class="friends__header">
+        <div class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img
+              src="images/카카오3.jpg"
+              alt=""
+              class="g-avatar friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                김동은
+              </span>
+              <span class="friend__status">
+                휘야휘야
+              </span>
+            </div>
+          </div>
         </div>
       </header>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="friends.html" class="nav__list-link">
-              <i class="fas fa-user"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="index.html" class="nav__list-link">
-              <i class="far fa-comment"></i>
-              <!-- fas는 fontawesomesolid, far은 fontawesomeregular의 약자 -->
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="find.html" class="nav__list-link">
-              <i class="fas fa-search"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="more.html" class="nav__list-link">
-              <i class="fas fa-ellipsis-h"></i>
-            </a>
-          </li>
-          <!-- li.nav__list-item*4>a.nav__list-link로 위 코드 빌드
+      <div class="friends__plus">
+        <h5 class="friends__title">새로운 친구</h5>
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img
+              src="images/카카오3.jpg"
+              alt=""
+              class="g-avatar friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                Plus Friend
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="friends__list">
+        <h5 class="friends__title">Friends 14</h5>
+        <li class="friends__friend friend friend">
+          <div class="friend__column">
+            <img
+              src="images/카카오3.jpg"
+              alt=""
+              class="g-avatar friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                이성택
+              </span>
+              <span class="friend__status">
+                훗훗
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <span>
+                FTISLAND (FT...)
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="far fa-comment"></i>
+            <!-- fas는 fontawesomesolid, far은 fontawesomeregular의 약자 -->
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+        <!-- li.nav__list-item*4>a.nav__list-link로 위 코드 빌드
           >a는 4개의 li안에 링크가 포함되어 있다는 의미. -->
-        </ul>
-      </nav>
-      <!-- css파일 불러올 때에는 항상 이름이 같아야한다! -->
-    </div>
+      </ul>
+    </nav>
+    <!-- css파일 불러올 때에는 항상 이름이 같아야한다! -->
   </body>
 </html>
