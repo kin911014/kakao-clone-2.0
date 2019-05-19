@@ -1,0 +1,18 @@
+.status-bar {
+  display: flex;
+  /* display: flex;를 통해 클래스 status-bar를 모두 가로정렬시킴 */
+  justify-content: space-between;
+  /* 큰 덩어리 두개 사이를 벌려준다 */
+  margin-bottom: 30px;
+  /* opacity: 0.7; */
+  /* 80퍼센트의 색만 보여준다는 의미로 투명화. */
+  color: #626262;
+}
+
+.status-bar i {
+  font-size: 14px;
+}
+
+.status-bar .status-bar__battery-level {
+  margin-left: 5px;
+}

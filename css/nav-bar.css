@@ -1,0 +1,22 @@
+.nav {
+  position: fixed;
+  /* 위 소스는 움직여도 그자리에서 고정을 시켜준다. styles.css에서 body에 전반적으로 패딩값을 주어도 
+  고정된다.*/
+  /* 위 소스 사용 시 반드시 width를 사용해야한다. */
+  width: 100%;
+  background-color: #fcfcfc;
+  padding: 20px 50px;
+  bottom: 10px;
+  left: 0px;
+  bottom: 0px;
+  border-top: 1px solid #f7f7f7;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav i {
+  font-size: 20px;
+}

@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+  /* 채팅과 아이콘의 가로중앙을 맞춰준다 */
+}
+
+.header .header__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.header .header__icon {
+  font: size 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  /* 위는 아이콘에 마우스 커서를 댔을때 손가락모양으로 바꿔준다 */
+}
+
+.header .header__header-column {
+  display: flex;
+  align-items: center;
+}
+
+.header .header__back-btn {
+  font-size: 22px;
+  margin-right: 20px;
+}
