@@ -3,11 +3,18 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
 @import "header.css";
 @import "nav-bar.css";
-
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
 * {
   box-sizing: border-box;
   /* nav의 아이콘 ...이 보이지 않아 위 소스를 전체에 설정.
-  어떤건지 아직 명확치않음 */
+ 일반 박스에 패딩을 설정한다면
+  일반박스값 w:100px h:50px  패딩값 10px을 줄 때
+  박스의 총 길이는 w: 120px  h: 70px가 된다
+  위의 box-sizing: border-box값을 추가한다면 
+  패딩값만큼 박스의 총 길이가 변화하지 않도록 고정시킨다는
+  의미이다.*/
 }
 body {
   background-color: white;
@@ -19,5 +26,6 @@ body {
 
 a {
   color: inherit;
+  /* a는 링크로 모든링크는 부모요소로부터 색을 받아온다는 의미 */
+  text-decoration: none;
 }
-/* a는 링크로 모든링크는 부모요소로부터 색을 받아온다는 의미 */

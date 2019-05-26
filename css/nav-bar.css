@@ -20,3 +20,23 @@
 .nav i {
   font-size: 20px;
 }
+.nav .nav__list-link {
+  position: relative;
+  /* 아래 앱솔루트를 사용하려면 부모클래스에 relative를 사용해야한다. */
+}
+.nav .nav__badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  color: white;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  /* 바로위의 코드는 네모박스를 동그랗게 만들어준다
+  10px 또는 50%입력시 완전 동그랗게 변한다. */
+  font-size: 10px;
+}

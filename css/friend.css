@@ -1,0 +1,70 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  /* 위의 소스는 수평간 관계를의미 */
+  align-items: center;
+  /* 위의 소스는 수직 관계를 의미 */
+}
+/* 아래 소스는 friend안에 있는 friend__avatar를 의미 */
+.friend .friend__avatar {
+  width: 50px;
+  border-radius: 37%;
+  /* 아바타에는 크기가 바뀔 것이기 때문에 px로 줄 수 없고 %로 사용가능 */
+}
+/* 아래 소스는 띄어쓰기를 안했으므로 .friend__avatar와.g-avatar 두개의 
+클래스 둘다 가진 element에 적용된다는 의미*/
+.friend__avatar.g-avatar {
+  width: 70px;
+}
+.friend__avatar.m-avatar {
+  width: 60px;
+}
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+.friend .friend__avatar {
+  margin-right: 15px;
+}
+.friend__content .friend__name {
+  display: block;
+  /* 여기에 블럭을 줘서 위와 아래를 분리해서 구분 */
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+  opacity: 0.5;
+}
+
+.friend__content .friend__bottom-text {
+  font-size: 12px;
+}
+
+.friend .chat__timestamp,
+.friend__content .friend__status {
+  font-size: 12px;
+}
+
+.friends .friend__now-listening {
+  border: 1.5px solid #27df5b;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.friend__now-listening span {
+  opacity: 0.6;
+}
+.friend__now-listening i {
+  font-size: 12px;
+}
+.friend__add-icon {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+}
