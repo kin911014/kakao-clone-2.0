@@ -7,9 +7,10 @@
   justify-content: space-around;
 }
 
-.find .header__btn {
+.find .find__header-btn {
   display: flex;
   flex-direction: column;
+  /* 붙어있는 두개의 덩어리를 위아래로 고정하고 싶을때 사용? */
   align-items: center;
 }
 .find .header-btn__title {

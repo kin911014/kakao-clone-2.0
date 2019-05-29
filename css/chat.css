@@ -1,0 +1,146 @@
+.header-wrapper{
+  position: fixed;
+  top:0px;
+  width: 100%;
+  padding:5px 0px;
+  background-color: white;
+  
+}
+
+.chats-body {
+  padding: 0;
+  padding-top: 130px;
+}
+
+
+/* 빈칸이 없게 디폴드값 padding에 0을 줬다. */
+
+.chats-body .header,
+.chats-body .status-bar {
+  padding: 10px 20px;
+}
+
+.chats-body {
+  background-image: url("../images/chatBg.png");
+  min-height: 1000vh;
+  /* 위의 min-height: 100vh가 하는 역할은 .chat의 모든 div?? (모든 박스형인듯..) 에 viewport의 100%높이를 주는것
+  여기서 viewport는 스크린으로 생각. vh(viewport height의 약자)  */
+}
+
+.chat__write {
+  position: fixed;
+  bottom: 50px;
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  left: 0;
+  right: 0;
+  /*위 코드는 중앙으로 고정하는 방법중 하나
+  left: 0; right: 0; 은 잘모르겠다 그냥 통째로 외우기*/
+  background-color: #fcfcfc;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  /* box-shadow는 박스에 그림자를 만들어준다. */
+  /* stripe사이트에 들어가서 음영을 따올 수 있다. */
+  padding: 0px 20px;
+  border-radius: 40px;
+}
+
+.chat__write i {
+  font-size: 22px;
+}
+/* .chat__write-column:nth-child(2)에서 nth-child(2)는 
+ .chat__write-column과 같은 것들 중 두번째것을 선택한다는 의미*/
+.chat__write-column:nth-child(2) {
+  width: 80%;
+}
+
+.chat__write-column input {
+  padding: 20px 10px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+}
+
+/* focus 메시지를 클릭했을 때 주변의 파란색 라인이 보이지 않게끔 조정하는 방법 */
+.chat__write-column input:focus {
+  outline: none;
+}
+
+.chat-screen .chat__messages {
+  border-top: 1px solid f7f7f7;
+  display: flex;
+  flex-direction: column;
+  /* 시작방향이 위에서 아래라는 의미 */
+  align-items: center;
+  justify-content: center;
+  /* 주축이 바뀌었으므로 원래 세로방향끼리 중심을 맞추었지만 가로방향의 중심으로 맞추어진다. */
+  padding: 0px 20px;
+  padding-top: 30px;
+}
+
+.chat__messages .chat__timestamp {
+  background-color: white;
+  font-size: 12px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  text-transform: uppercase;
+  /* 위 코드는 대문자 만드는 코드 */
+  font-weight: 600;
+}
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.incoming-message {
+  align-self: flex-start;
+}
+
+.sent-message {
+  align-self: flex-end;
+}
+
+.incoming-message img {
+  width: 40px;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+.message .message__bubble {
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  padding: 10px 20px;
+  border-radius: 200px;
+  color: white;
+  font-weight: 600;
+  display: block;
+}
+
+.incoming-message .message__author {
+  margin-top: 10px;
+  display: block;
+  /* span에서는 위아래값을 설정x 그럴땐 display:block를 사용한다. */
+  font-weight: 600;
+  font-size: 12px;
+}
+.incoming-message .message__bubble {
+  border-bottom-left-radius: 0px;
+  background-image:linear-gradient(to right, #F0F2F0,#000C40);
+  /*  background-image:linear-gradient(to right, #F0F2F0,#000C40); 
+  background-image:linear-gradient는 그라데이션을 사용할때 입력  
+  (to right, #F0F2F0,#000C40);에서 to는 어느방향으로 그라데이션을 시작할 건지
+  그리고 ui gradient색상을 선택해서 넣으면 된다*/
+}
+
+.sent-message .message__bubble {
+  border-bottom-right-radius: 0px;
+  background-image: linear-gradient(to left, #000425, #004e92);
