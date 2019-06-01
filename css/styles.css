@@ -9,6 +9,8 @@
 @import "more.css";
 @import "settings.css";
 @import "chat.css";
+@import "mobile.css";
+
 * {
   box-sizing: border-box;
   /* nav의 아이콘 ...이 보이지 않아 위 소스를 전체에 설정.
@@ -31,4 +33,19 @@ a {
   color: inherit;
   /* a는 링크로 모든링크는 부모요소로부터 색을 받아온다는 의미 */
   text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+main {
+  animation: fadeIn 0.5s ease-in-out;
 }
