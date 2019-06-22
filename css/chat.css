@@ -153,14 +153,14 @@
   align-self: flex-end;
 }
 
-@keyframes spin {
+/* @keyframes spin {
   from {
     transform: none;
   }
   to {
     transform: rotateY(1turn);
   }
-}
+} */
 
 .incoming-message img {
   width: 40px;
@@ -192,7 +192,7 @@
 }
 .incoming-message .message__bubble {
   border-bottom-left-radius: 0px;
-  background-image: linear-gradient(to right, #f0f2f0, #000c40);
+  background-image: linear-gradient(to right, #158beb, #000c40);
   /*  background-image:linear-gradient(to right, #F0F2F0,#000C40); 
   background-image:linear-gradient는 그라데이션을 사용할때 입력  
   (to right, #F0F2F0,#000C40);에서 to는 어느방향으로 그라데이션을 시작할 건지
